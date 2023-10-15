@@ -1,4 +1,9 @@
-import {ListHeader} from '././components/ListHeader'
+import { ListHeader } from "././components/ListHeader";
+import { Styled } from "./App.styles";
 export const App = () => {
-  return <div><ListHeader listName={'🍕 Holiday Tick List'}/></div>;
+  return (
+    <Styled.App>
+      <ListHeader listName={"🍕 Holiday Tick List"} />
+    </Styled.App>
+  );
 };
