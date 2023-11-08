@@ -39,16 +39,21 @@ export const App = () => {
 
   return (
     <>
-      <Styled.App>
-        <ListHeader listName={"🍕 Holiday Tick List"} />
-      </Styled.App>
-      {tasks?.map((task) => {
-        return (
-          <>
-            <ListItem task={task.id} />
-          </>
-        );
-      })}
+      <ListHeader listName={"🍕 Holiday Tick List"} />
+      <Styled.ListItems>
+        {tasks?.map((task) => {
+          return (
+            <>
+              <ListItem
+                taskId={task.id}
+                taskTitle={task.title}
+                taskProgress={task.progress}
+                taskDate={task.date}
+              />
+            </>
+          );
+        })}
+      </Styled.ListItems>
     </>
   );
 };

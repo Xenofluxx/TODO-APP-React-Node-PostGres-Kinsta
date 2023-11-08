@@ -4,7 +4,7 @@ export const ListHeader = ({ listName }) => {
     console.log("sing out...");
   };
   return (
-    <>
+    <Styled.MyListHeader>
       <h1>{listName}</h1>
       <Styled.MyButton>Add</Styled.MyButton>
       <Styled.MyButton
@@ -14,6 +14,6 @@ export const ListHeader = ({ listName }) => {
       >
         Sign out
       </Styled.MyButton>
-    </>
+    </Styled.MyListHeader>
   );
 };
