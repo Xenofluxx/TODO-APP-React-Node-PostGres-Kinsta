@@ -1,4 +1,3 @@
-export const ListItem = () => {
-    return <div></div>;
-  };
-  
+export const ListItem = ({ task }) => {
+  return; //<div>{task}</div>;
+};
