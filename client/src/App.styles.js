@@ -6,4 +6,11 @@ const ListItems = styled.div`
   flex-wrap: wrap;
   align-content: center;
 `;
-export const Styled = { ListItems };
+const App = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+`;
+export const Styled = { ListItems, App };

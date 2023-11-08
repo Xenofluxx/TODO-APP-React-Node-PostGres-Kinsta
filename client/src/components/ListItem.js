@@ -22,6 +22,8 @@ export const ListItem = ({ taskId, taskTitle, taskProgress, taskDate }) => {
         <div style={{ fontWeight: "bold" }}> Date of Task Creation</div>
         {taskDate}
       </Styled.ItemComponent>
+      <Styled.MyButton>EDIT</Styled.MyButton>
+      <Styled.MyButton>DELETE</Styled.MyButton>
     </Styled.ListItem>
   );
 };
